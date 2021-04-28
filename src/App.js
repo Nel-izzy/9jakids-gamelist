@@ -24,7 +24,7 @@ import GameList from './components/GameList'
    
     
     componentDidMount() {
-      fetch("http://bit.ly/TeaserTask")
+      fetch("https://bit.ly/TeaserTask")
            .then(response => response.json())
            .then(games => this.setState({games}))
            .catch( error => console.error(error))
