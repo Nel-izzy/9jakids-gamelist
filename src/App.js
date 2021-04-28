@@ -37,17 +37,11 @@ import GameList from './components/GameList'
        if(game.Group.toLowerCase().includes(this.state.filtered.toLowerCase()) || game.Level.toLowerCase().includes(this.state.filtered.toLowerCase()) ){
         return game
        }
+       return []
      })
      const searchedGames = () => this.state.games.filter(game => !game.Topic.toLowerCase().includes(this.state.searched.toLowerCase()))
     
-     
-    //  if(this.state.filtered.length > 0){
-    //    this.setState({
-    //      search: false,
-    //      searched: ""
-    //    })
-    //  }
-     
+      
      
     return (
       <div>
